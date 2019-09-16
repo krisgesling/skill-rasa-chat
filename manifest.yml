@@ -1,4 +1,5 @@
 dependencies:
   # Pip dependencies on PyPI
   python:
+    - json
     - requests
