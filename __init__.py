@@ -45,7 +45,7 @@ class RasaSkill(MycroftSkill):
             return
         # Use the last dialog from Rasa to prompt for next input from the user
         prompt = self.messages[-1]
-        self.query_rasa(prompt)
+        return self.query_rasa(prompt)
 
     @intent_handler(IntentBuilder("StartChat").require("Chatwithrasa"))
     def handle_talk_to_rasa_intent(self, message):
